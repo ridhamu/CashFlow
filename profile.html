@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="profile-header">
+        <nav>
+            <a href="index.html"><img src="assets/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>LOGIN</h2>
+                        <form>
+                            <input type="email" class="input-box" placeholder="Your Email" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span>Remember me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()"> I'm New Here</button>
+                        <a href="">Forgot Password</a>
+                    </div>
+                    <div class="card-back">
+                        <h2>REGISTER</h2>
+                        <form>
+                            <input type="text" class="input-box" placeholder="Your Name" required>
+                            <input type="email" class="input-box" placeholder="Your Email" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            <input type="checkbox"><span>Remember me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                        <a href="">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        var card = document.getElementById("card");
+
+        function openRegister(){
+            card.sytle.transform = "rotateY(-180deg)";
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0"; 
+        }
+        function hideMenu(){
+            navLinks.sytle.right = "200px"; 
+        }
+
+    </script>
+</body>
+</html>

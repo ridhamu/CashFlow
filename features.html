@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="assets/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Features We Offer</h1>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h1>Features We Offer</h1>
+        <p>we serve what others not. better. more efficient. banks on your pocket</p>
+
+        <div class="row">
+            <div class="features-col">
+                <h3>Transfer</h3>
+                <p>Transfer between any bank without being charged admin fees.</p>
+            </div>
+            <div class="features-col">
+                <h3>Top Up</h3>
+                <p>Top up e-wallet, game wallet, and payment without admin fees.</p>
+            </div>
+            <div class="features-col">
+                <h3>Cash Go</h3>
+                <p>Withdrawal services in cash from CashFlow balances through verified merchants</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Why Us ? -->
+    <section class="reason">
+        <h1>Why CashFlow?</h1>
+        <p>the reason we create cashflow</p>
+        <div class="row">
+            <div class="reason-col">
+                <img src="assets/trusted.png" alt="trusted">
+                <h3>Trusted</h3>
+                <p>We offer reliable financial services</p>
+            </div>
+            <div class="reason-col">
+                <img src="assets/fast.png" alt="Quick">
+                <h3>Quick</h3>
+                <p>We are known for our fast and accurate service</p>
+            </div>
+            <div class="reason-col">
+                <img src="assets/flexible.png" alt="flexible">
+                <h3>Flexible</h3>
+                <p>you can almost do anything without any admin fees</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What they say -->
+
+<section class="testimonial">
+    <h1>What They Say About CashFlow</h1>
+    <p>words from our loyal users</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="assets/user1.jpg" alt="user1">
+            <div>
+                <p>"this application really helps me in reducing unnecessary expenses such as admin fees. cashflow taught me to be more sensitive to financial stability"</p>
+                <h3>Jamila</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="assets/user2.jpg" alt="user2">
+            <div>
+                <p>"very suitable for millennials. all e-commerce and e-wallet transactions are very efficient!"</p>
+                <h3>Memet</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>By building CashFlow, we hope to be able to help many millennials <br> who are still learning towards financial freedom at a young age</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"> by Our Team</i></p>
+    </section>
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0"; 
+        }
+
+        function hideMenu(){
+            navLinks.sytle.right = "200px"; 
+        }
+
+    </script>
+</body>
+</html>
